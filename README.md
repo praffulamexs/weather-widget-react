@@ -6,6 +6,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 You should have [YARN](https://yarnpkg.com/) installed on your syste in order to run this project.
 
+### Pre-requisite
+
+The app uses [Open Weather Map API](https://openweathermap.org/) so you must have the token before running the project.
+
+Once you have acquired the token, create a *token.ts* file inside the *src* folder and paste the following code -
+```
+const token: string = 'YOUR_API_TOKEN'
+export default token
+```
+...replacing the *YOUR_API_TOKEN* with your own token.
+
+### Setting Up
+
 First, you must install node modules - 
 ```
 yarn install
@@ -42,6 +55,7 @@ The project should run on your [Localhost PORT 3000](http://localhost:3000/) by 
   - **weather-widget** - *A custom weather widget to show weather information based on the current location of the user.*
     - *weather-widget.tsx*
     - *weather-widget.css*
+- *token.ts* - ***You need to create this file.*** *This file exports a string variable - token which returns the Open Weather Map API token.*
   ...
 ...
 

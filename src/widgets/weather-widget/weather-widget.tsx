@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Card, InputField, RadioField, WeatherInformation } from '../../components/'
 import RadioInterface from '../../interfaces/radio-interface'
+import token from '../../token'
 import './weather-widget.css'
 
 interface Information {
@@ -42,7 +43,7 @@ const WeatherWidget: React.FC = () => {
         if (navigator.geolocation) {
             const units: string = information.temperature === 'C' ? 'metric' : 'imperial'
             navigator.geolocation.getCurrentPosition((position) => {
-                fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=${units}&appid=240cd0a33c4539805bc55d194da3893d`)
+                fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=${units}&appid=${token}`)
                     .then((response) => response.json())
                     .then((weatherData) => {
                         if (weatherData.main.temp !== information.temperatureValue) { // Only update the state if the new temperature values are different i.e F or C value
