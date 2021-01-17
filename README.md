@@ -4,34 +4,46 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Running the Project
 
+You should have [YARN](https://yarnpkg.com/) installed on your syste in order to run this project.
 
+First, you must install node modules - 
+```
+yarn install
+```
+
+Run the project - 
+```
+yarn start
+```
+
+The project should run on your [Localhost PORT 3000](http://localhost:3000/) by default.
 
 ## Project Structure
 ...
+
 ***src***
 - **components**
-  - **card**
+  - **card** - *A custom Card component that encapsulates it's children components in a box like structure.*
     - *card.tsx*
     - *card.css*
-  - **input-field**
+  - **input-field** - *An input field component for re-usability.*
     - *input-field.tsx*
     - *input-field.css*
-  - **radio-field**
+  - **radio-field** - *A radio group component for re-usability.*
     - *radio-field.tsx*
     - *radio-field.css*
-  - **weather-information**
+  - **weather-information** - *A small custom component to display weather information inside the card component.*
     - *weather-information.tsx*
     - *weather-information.css*
  *index.ts*
 - **interfaces**
   - *radio-interface.ts*
 - **widgets**
-  - **weather-widget**
+  - **weather-widget** - *A custom weather widget to show weather information based on the current location of the user.*
     - *weather-widget.tsx*
     - *weather-widget.css*
- ...
+  ...
 ...
-
 
 ## Available Scripts
 
