@@ -2,29 +2,33 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Running the Project
+
+
+
 ## Project Structure
 ...
 ***src***
 - **components**
- - **card**
-  - *card.tsx*
-  - *card.css*
- - **input-field**
-  - *input-field.tsx*
-  - *input-field.css*
- - **radio-field**
-  - *radio-field.tsx*
-  - *radio-field.css*
- - **weather-information**
-  - *weather-information.tsx*
-  - *weather-information.css*
+  - **card**
+    - *card.tsx*
+    - *card.css*
+  - **input-field**
+    - *input-field.tsx*
+    - *input-field.css*
+  - **radio-field**
+    - *radio-field.tsx*
+    - *radio-field.css*
+  - **weather-information**
+    - *weather-information.tsx*
+    - *weather-information.css*
  *index.ts*
 - **interfaces**
- - *radio-interface.ts*
+  - *radio-interface.ts*
 - **widgets**
- - **weather-widget**
-  - *weather-widget.tsx*
-  - *weather-widget.css*
+  - **weather-widget**
+    - *weather-widget.tsx*
+    - *weather-widget.css*
  ...
 ...
 
